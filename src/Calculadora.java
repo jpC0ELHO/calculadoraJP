@@ -116,9 +116,13 @@ public class Calculadora implements ActionListener{
                  textField.setText(textField.getText().concat("."));
              }
              else if (e.getSource() == addButton) {
+                 try{
                  num1 = Double.parseDouble(textField.getText());
                  operator = '+';
-                 textField.setText("");
+                 textField.setText("");}catch (NumberFormatException o){
+                     textField.setText("Error");
+                     num1=Double.parseDouble(textField.getText());
+                 }
              }
              else if (e.getSource() == subButton) {
 
