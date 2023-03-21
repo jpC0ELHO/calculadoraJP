@@ -11,7 +11,7 @@ public class Calculadora implements ActionListener{
     JButton[]numberButtons= new JButton[10];
     JButton[]functionButtons= new JButton[8];
     JButton addButton,subButton,mulButton,divButton;
-    JButton decButton,equButton,delButton,clrButton,negButton;
+    JButton decButton,equButton,delButton,clrButton;
     JPanel panel;
 
     Font myFont=new Font("Ink Free",Font.BOLD,30);
